@@ -1,0 +1,11 @@
+<html>
+    <script lang="text/javascript">
+        const evtSource = new EventSource("../hello");
+        evtSource.addEventListener("onProgress", (event) => {
+            console.log(event.data);
+        });
+    </script>
+    <body>
+        Index
+    </body>
+</html>
